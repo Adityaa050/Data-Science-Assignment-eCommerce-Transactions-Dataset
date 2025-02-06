@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 customers = pd.read_csv("Customers.csv")
 transactions = pd.read_csv("Transactions.csv")
 
-# Merge datasets
+# Merge the datasets
 customer_transactions = pd.merge(transactions, customers, on="CustomerID")
 
 # Aggregate features
