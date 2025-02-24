@@ -12,7 +12,7 @@ transactions = pd.read_csv("Transactions.csv")
 # Merge the datasets
 customer_transactions = pd.merge(transactions, customers, on="CustomerID")
 
-# Aggregate features
+# Aggregate the features
 customer_features = customer_transactions.groupby('CustomerID').agg({
     'TotalValue': 'sum',
     'Quantity': 'sum',
