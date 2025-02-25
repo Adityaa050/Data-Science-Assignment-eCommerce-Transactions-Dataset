@@ -5,7 +5,7 @@ from sklearn.metrics import davies_bouldin_score
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 
-# Load datasets
+# Load the datasets
 customers = pd.read_csv("Customers.csv")
 transactions = pd.read_csv("Transactions.csv")
 
