@@ -5,11 +5,11 @@ from sklearn.metrics import davies_bouldin_score
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 
-# Load the datasets
+# Load datasets
 customers = pd.read_csv("Customers.csv")
 transactions = pd.read_csv("Transactions.csv")
 
-# Merge the datasets
+# Merge datasets
 customer_transactions = pd.merge(transactions, customers, on="CustomerID")
 
 # Aggregate the features
